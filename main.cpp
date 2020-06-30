@@ -1,4 +1,13 @@
 // Simple dynamic program to compute shortest distance over a graph
+//
+// - Read data from a OpenStreetMap Dat file
+// - Represent streets as a graph and distances between nodes in meters
+// - Calculate shortest walkable path between two OpenStreetMap IDs
+//
+// Compile with
+//   g++ shortestpath.cpp -o shortestpath -std=c++17
+// Run as
+//   ./shortestpath <path to graph> <from-osm-id> <to-osm-id>
 
 #include <algorithm>      // heap data-structure
 #include <fstream>        // reading from files
